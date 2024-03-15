@@ -20,6 +20,10 @@ user/pwd:test/123456
 
 ​	The system did not detect or restrict uploaded files. Attackers can upload Trojan files such as JSP to gain server privileges by adding/ Save files to any directory
 
+URL：http://122.51.43.143/api/system/api/localStorage
+test user do not have authority.
+![image-20240315164516463](./AlldataNewBug.assets/image-20240315164516463.png)
+
 Filepath：/alldata-alldata-0.4.6/studio/box/src/main/java/com/platform/rest/LocalStorageController.java
 
 Line number：52
