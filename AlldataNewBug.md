@@ -22,6 +22,7 @@ user/pwd:test/123456
 
 URL：http://122.51.43.143/api/system/api/localStorage
 test user do not have authority.
+
 ![image-20240315164516463](./AlldataNewBug.assets/image-20240315164516463.png)
 
 Filepath：/alldata-alldata-0.4.6/studio/box/src/main/java/com/platform/rest/LocalStorageController.java
@@ -51,6 +52,10 @@ Description：In the FileUtil class upload method, the program concatenates the 
 ### 02-Any file upload 2
 
 ​	The system did not detect or restrict the types of files uploaded on the SQL file upload interface. Attackers can upload Trojan files such as JSP and use ../ Save files to any directory to gain server privileges
+URL:http://122.51.43.143/api/system/api/database/upload
+test user do not have authority to upload file.
+
+![image-20240315165423065](./AlldataNewBug.assets/image-20240315165423065.png)
 
 Filepath：/alldata-alldata-0.4.6/studio/services/system-service-parent/system-service/src/main/java/com/platform/modules/mnt/rest/DatabaseController.java
 
@@ -62,7 +67,11 @@ Description：The DatabaseController class did not detect the uploaded file and 
 
 ### 03-Any file upload 3
 
-​	The system did not detect or restrict the types of files uploaded on the file upload interface. Attackers can upload Trojan files such as JSP file and use ../ Save files to any directory to gain server privileges
+​	The system did not detect or restrict the types of files uploaded on the file upload interface. Attackers can upload Trojan files such as JSP file and use ../ Save files to any directory to gain server privileges.
+URL:http://122.51.43.143/api/system/api/deploy/upload
+test user do not have authority to upload file.
+
+![image-20240315165018090](./AlldataNewBug.assets/image-20240315165018090.png)
 
 Filepath：/alldata-alldata-0.4.6/studio/services/system-service-parent/system-service/src/main/java/com/platform/modules/mnt/rest/DeployController.java
 
